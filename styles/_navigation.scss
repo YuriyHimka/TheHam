@@ -1,0 +1,78 @@
+@import "variables";
+
+.navigation {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 80px;
+  margin-top: 4px;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: $blackColor;
+    opacity: 0.4;
+    z-index: -1;
+  }
+}
+
+.navigation__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 80px;
+}
+
+.navigation__items {
+  display: flex;
+  gap: $marginRegular;
+
+  .navigation__item {
+    transition: $slowAnimation;
+    cursor: pointer;
+
+    a {
+      font-size: 14px;
+      font-weight: $fontBold;
+      text-transform: $uppercase;
+      color: $greyColor;
+      transition: $slowAnimation;
+    }
+
+    &:hover {
+      border-bottom: 2px solid $primeryColor;
+      transition: $slowAnimation;
+
+      a {
+        color: $primeryColor;
+        transition: $slowAnimation;
+      }
+    }
+  }
+
+  .icon {
+    margin-top: 4px;
+    color: $greyColor;
+    transition: $slowAnimation;
+    cursor: pointer;
+
+    path  {
+      fill: $greyColor;
+      transition: $slowAnimation;
+    }
+
+    &:hover {
+      path {
+        fill: $primeryColor;
+        transition: $slowAnimation;
+      }
+    }
+  }
+
+}

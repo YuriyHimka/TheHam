@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap');
+@import url('https://css.gg/css');
+
+@import "variables";
+@import "base";
+@import "components";
+@import "navigation";
+
+
+//navigation
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  .logo__title {
+    font-size: $subheader;
+    font-weight: $fontRegular;
+    margin-left: 1rem;
+    color: white;
+  }
+
+  .logo__symbol {
+    color: white;
+    position: absolute;
+    top: 2%;
+    z-index: 99;
+    margin-left: 6px;
+    font-weight: $fontBold;
+    font-size: $subheader;
+  }
+
+  &:hover {
+    .hexagon {
+      transform: rotate(90deg);
+    }
+  }
+}
+
+//viewport
+#viewport {
+  width: 100%;
+  height: 100vh;
+  background: url("https://cdn.pixabay.com/photo/2015/07/28/22/01/office-865091_1280.jpg");
+  background-size: cover;
+}
+
+.content__layout {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  .cta {
+    margin-top: $marginTitle;
+
+    button {
+      margin: 0 .5rem;
+    }
+  }
+
+  .viewport__titles {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    color: white;
+    font-weight: $fontBold;
+    text-transform: $uppercase;
+  }
+
+  .subheader {
+    font-size: $subheader;
+    line-height: 160%;
+  }
+
+  .description {
+    font-size: $subheader;
+    text-transform: none;
+    font-weight: $fontLight;
+    color: $greyColor;
+  }
+}
+
+//benefits
+#benefits {
+  margin: 4px 0;
+}
+
+//cta
+#cta {
+  min-height: 480px;
+  padding: $marginTitle 0;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: url("https://cdn.pixabay.com/photo/2015/01/08/18/26/man-593333_1280.jpg");
+  background-size: cover;
+
+  button {
+    margin-top: $marginRegular;
+  }
+}
+
+//portfolio
+#portfolio {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  background: $bgColor;
+
+  button {
+    margin: $marginTitle auto;
+  }
+}
+
+//blog
+#news {
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: $marginTitle;
+}
+
+.blog__items {
+  gap: $marginRegular;
+}
+
+//replies
+#replies {
+  background: url("https://cdn.pixabay.com/photo/2019/12/17/17/58/night-4702174_1280.jpg");
+  background-size: cover;
+  padding: $marginRegular;
+}

@@ -1,0 +1,32 @@
+// typography
+$fontStuck: 'Montserrat', sans-serif;
+$fontLight: 200;
+$fontRegular: 400;
+$fontBold: 700;
+$uppercase: uppercase;
+$h1title: 78px;
+$h2title: 40px;
+$h3title: 32px;
+$h4title: 20px;
+$subheader: 24px;
+$basicText: 18px;
+$basicSmallText: 16px;
+
+
+//colors
+$primeryColor: #1dd1a1;
+$primeryHoverColor: #45e8be;
+$primeryTransparent: rgba(31, 218, 181, 0.2);
+$secondaryColor: #1e90ff;
+$secondaryHoverColor: #70b4ff;
+$blackColor: #2f3542;
+$greyColor: #919aa8;
+$lightColor: #dfe4ea;
+$bgColor: #ecf0f1;
+
+//animation
+$slowAnimation: all .4s ease;
+
+//margins
+$marginTitle: 80px;
+$marginRegular: 2rem;
