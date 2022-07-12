@@ -6,37 +6,6 @@
 @import "components";
 @import "navigation";
 
-
-//navigation
-.logo {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
-  .logo__title {
-    font-size: $subheader;
-    font-weight: $fontRegular;
-    margin-left: 1rem;
-    color: white;
-  }
-
-  .logo__symbol {
-    color: white;
-    position: absolute;
-    top: 2%;
-    z-index: 99;
-    margin-left: 6px;
-    font-weight: $fontBold;
-    font-size: $subheader;
-  }
-
-  &:hover {
-    .hexagon {
-      transform: rotate(90deg);
-    }
-  }
-}
-
 //viewport
 #viewport {
   width: 100%;

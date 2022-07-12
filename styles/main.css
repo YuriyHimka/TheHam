@@ -280,6 +280,30 @@ button:hover::after {
   transform: rotate(-60deg);
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.logo .logo__title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-left: 1rem;
+  color: white;
+}
+.logo .logo__symbol {
+  color: white;
+  position: absolute;
+  top: 2%;
+  z-index: 99;
+  margin-left: 6px;
+  font-weight: 700;
+  font-size: 24px;
+}
+.logo:hover .hexagon {
+  transform: rotate(90deg);
+}
+
 .benefit__item {
   display: flex;
   flex-flow: column wrap;
@@ -650,30 +674,6 @@ footer {
 .navigation__items .icon:hover path {
   fill: #1dd1a1;
   transition: all 0.4s ease;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-}
-.logo .logo__title {
-  font-size: 24px;
-  font-weight: 400;
-  margin-left: 1rem;
-  color: white;
-}
-.logo .logo__symbol {
-  color: white;
-  position: absolute;
-  top: 2%;
-  z-index: 99;
-  margin-left: 6px;
-  font-weight: 700;
-  font-size: 24px;
-}
-.logo:hover .hexagon {
-  transform: rotate(90deg);
 }
 
 #viewport {
